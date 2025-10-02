@@ -21,8 +21,8 @@ A comprehensive demo showcasing Fastly Object Storage and Image Optimizer workin
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/FastlyObjectStorageDemo.git
-cd FastlyObjectStorageDemo
+git clone https://github.com/NisseBoman/ObjectStorage-demo.git
+cd ObjectStorage-demo
 ```
 
 ### 2. Install Dependencies
