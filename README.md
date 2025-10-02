@@ -39,6 +39,8 @@ npm install
 2. **Enable Image Optimizer** following the [Image Optimizer Reference](https://fastly.com/documentation/reference/io/)
 3. **Create a bucket** named `images` (or update the `BUCKET_NAME` constant)
 4. **Upload some image files** (JPG, PNG, GIF, WEBP, AVIF, SVG supported)
+
+   **💡 Pro Tip**: Use the [Fastly Object Storage Demo Tool](https://github.com/Antoinebr/Fastly-Object-Storage-Demo) to easily create buckets and upload files once you have your access key and secret key!
 5. **Record your credentials** (Access Key ID and Secret Key) for the next step
 
 ### 4. Configure Your Environment
