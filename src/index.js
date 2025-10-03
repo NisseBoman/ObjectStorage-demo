@@ -177,10 +177,14 @@ function generateImageGridHTML(objects) {
     // Extract filename from the key for display
     const filename = image.key.split('/').pop() || image.key;
     
+    // Generate URLs for thumbnail and full-size image
+    const thumbnailUrl = image.url;
+    const fullSizeUrl = `${STATIC_DOMAIN}/${image.key}?quality=75`;
+    
     html += `
       <div class="col-12 col-md-6 col-lg-3 mb-3">
         <div class="card h-100 bg-${colorClass} text-${textClass}">
-          <img src="${image.url}" class="card-img-top" alt="${filename}" style="height: 200px; object-fit: cover;">
+          <img src="${thumbnailUrl}" class="card-img-top image-clickable" alt="${filename}" style="height: 200px; object-fit: cover; cursor: pointer;" data-full-url="${fullSizeUrl}" data-filename="${filename}">
           <div class="card-body">
             <h6 class="card-title text-truncate">${filename}</h6>
             <p class="card-text small">Image from Object Storage</p>

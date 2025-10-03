@@ -29,5 +29,47 @@
         {template_images}
       </div>
     </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden:"true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImage" class="img-fluid" style="max-height: 80vh; object-fit: contain;" alt="Image Preview">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal JavaScript -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get the modal elements
+        const imageModal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalLabel = document.getElementById('imageModalLabel');
+        
+        // Add click event listeners to all clickable images
+        document.addEventListener('click', function(event) {
+          if (event.target.classList.contains('image-clickable')) {
+            const fullUrl = event.target.getAttribute('data-full-url');
+            const filename = event.target.getAttribute('data-filename');
+            
+            // Update modal content
+            modalImage.src = fullUrl;
+            modalImage.alt = filename;
+            modalLabel.textContent = filename;
+            
+            // Show the modal
+            const modal = new bootstrap.Modal(imageModal);
+            modal.show();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
