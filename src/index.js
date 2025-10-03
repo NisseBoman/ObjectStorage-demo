@@ -14,9 +14,9 @@ import * as crypto from "crypto-js";
 const EMPTY_HASH = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
 
 // The Fastly access key string
-const ACCESS_KEY_ID = "Wijbxl69AdjpygnsWhMi7t"; // CID: 7hzA9NJMDUmDzix12AcNsi
+const ACCESS_KEY_ID = "3HwM6jJjfnPUNO3I6YdD9w"; // CID: 7hzA9NJMDUmDzix12AcNsi
 // The Fastly secret access key paired with the access key above
-const SECRET_ACCESS_KEY = "NWgJwcCCj9Baj9TzI0ujC8vd2ejz5fOu72ln5mO4l0uQJX1HoXudgop26no1aNs9"; // CID: 7hzA9NJMDUmDzix12AcNsi
+const SECRET_ACCESS_KEY = "3Urkbd8N8Dw06wfYSg7UlW7LpS6VEmBFRJm8qdWCBLjSMopEMeqj5tE0SpMPaIUWP"; // CID: 7hzA9NJMDUmDzix12AcNsi
 
 const AWS_REGION = "eu-central";
 const OBJECT_STORAGE_ENDPOINT = "https://eu-central.object.fastlystorage.app";

@@ -23,12 +23,14 @@ A comprehensive demo showcasing Fastly Object Storage and Image Optimizer workin
 **Before deploying the Compute app, you need to set up Fastly Object Storage:**
 
 1. **Follow the [Object Storage Quick Start Guide](https://fastly.com/documentation/guides/platform/object-storage/object-storage-quick-start/)**
-2. **Enable Image Optimizer** following the [Image Optimizer Reference](https://fastly.com/documentation/reference/io/)
-3. **Create a bucket** named `images` (or update the `BUCKET_NAME` constant)
-4. **Upload some image files** (JPG, PNG, GIF, WEBP, AVIF, SVG supported)
+2. **Record your credentials** (Access Key ID and Secret Key) for the next step
+3. **Create a VCL service** That are used to serve the images thru Image Optimizer
+4. **Enable Image Optimizer** following the [Image Optimizer Reference](https://fastly.com/documentation/reference/io/)
+5. **Create a bucket** named `images` (or update the `BUCKET_NAME` constant)
+6. **Upload some image files** (JPG, PNG, GIF, WEBP, AVIF, SVG supported)
 
    **💡 Pro Tip**: Use the [Fastly Object Storage Demo Tool](https://github.com/Antoinebr/Fastly-Object-Storage-Demo) to easily create buckets and upload files once you have your access key and secret key!
-5. **Record your credentials** (Access Key ID and Secret Key) for the next step
+
 
 ### 2. Clone the Repository
 
