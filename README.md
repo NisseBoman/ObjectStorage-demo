@@ -18,20 +18,7 @@ A comprehensive demo showcasing Fastly Object Storage and Image Optimizer workin
 
 ## Quick Start
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/NisseBoman/ObjectStorage-demo.git
-cd ObjectStorage-demo
-```
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
-### 3. Set Up Object Storage
+### 1. Set Up Object Storage
 
 **Before deploying the Compute app, you need to set up Fastly Object Storage:**
 
@@ -42,6 +29,21 @@ npm install
 
    **💡 Pro Tip**: Use the [Fastly Object Storage Demo Tool](https://github.com/Antoinebr/Fastly-Object-Storage-Demo) to easily create buckets and upload files once you have your access key and secret key!
 5. **Record your credentials** (Access Key ID and Secret Key) for the next step
+
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/NisseBoman/ObjectStorage-demo.git
+cd ObjectStorage-demo
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+
 
 ### 4. Configure Your Environment
 
@@ -61,13 +63,16 @@ const STATIC_DOMAIN = "https://your-domain.com"; // Update to your domain
 # Build the project
 fastly compute build
 
+# Test locally
+fastly compute serve
+
 # Deploy to Fastly
 fastly compute publish
 ```
 
 ### 6. Test Your Deployment
 
-Visit your Fastly domain to see the dynamic image grid in action!
+Visit your Fastly domain to see the dynamic image grid in action or use the local testing.
 
 
 ## Architecture Overview
@@ -149,6 +154,7 @@ html += `
 2. **Authentication Failures**: Verify your Object Storage credentials
 3. **Empty Grid**: Check that your bucket contains valid image files
 4. **Image Loading Issues**: Confirm Image Optimizer is enabled in your Fastly service
+5. **Error message**: Error messages are pretty clear on what the problem is. 
 
 ### Getting Help
 
