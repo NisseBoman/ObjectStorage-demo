@@ -21,7 +21,7 @@ const SECRET_ACCESS_KEY = "3Urkbd8N8Dw06wfYSg7UlW7LpS6VEmBFRJm8qdWCBLjSMopEMeqj5
 const AWS_REGION = "eu-central";
 const OBJECT_STORAGE_ENDPOINT = "https://eu-central.object.fastlystorage.app";
 const BUCKET_NAME = "images";
-const STATIC_DOMAIN = "https://static.boman.church";
+const STATIC_DOMAIN = "https://static.boman.church"; // the domain name of the VCL service that serves the images. 
 const SIGNED_HEADERS = "host;x-amz-content-sha256;x-amz-date";
 
 // Image file extensions we want to display
@@ -179,7 +179,7 @@ function generateImageGridHTML(objects) {
     
     // Generate URLs for thumbnail and full-size image
     const thumbnailUrl = image.url;
-    const fullSizeUrl = `${STATIC_DOMAIN}/${image.key}?quality=75`;
+    const fullSizeUrl = `${STATIC_DOMAIN}/${image.key}?width=1500&height=1500&fit=bounds&quality=75`;
     
     html += `
       <div class="col-12 col-md-6 col-lg-3 mb-3">
