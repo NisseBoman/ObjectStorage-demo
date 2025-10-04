@@ -69,7 +69,7 @@ async function handleRequest(event) {
         status: 200,
         headers: new Headers({ 
           "Content-Type": "text/html; charset=utf-8",
-          "Cache-Control": "public, max-age=300" // Cache for 5 minutes
+          "Cache-Control": "public, max-age=3000" // Cache for 50 minutes
         }),
       });
     } catch (error) {
