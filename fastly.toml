@@ -7,7 +7,7 @@ description = "Object Storage demo for 2025 SKO by Nils Boman and Antoine Brossa
 language = "javascript"
 manifest_version = 3
 name = "OSDemo"
-service_id = "POtOoSODMENTHPL3tbs2lK"
+service_id = ""
 
 [local_server]
 
