@@ -1,14 +1,6 @@
 # Fastly Object Storage Demo
 
-A comprehensive demo showcasing Fastly Object Storage and Image Optimizer working together. This repository demonstrates how to dynamically fetch images from Object Storage and display them in a responsive Bootstrap grid using Fastly Compute @ Edge.
-
-## Features
-
-- 🌐 **Dynamic Image Loading**: Fetches images from Fastly Object Storage using S3-compatible APIs
-- 🖼️ **Image Optimization**: Integrates with Fastly Image Optimizer for automatic resizing and format conversion
-- 📱 **Responsive Design**: Bootstrap-powered grid system (4 columns → 2 columns → 1 column)
-- ⚡ **Edge Computing**: Hosted on Fastly Compute for ultra-fast global delivery
-- 🔐 **Secure Authentication**: AWS Signature V4 authentication for Object Storage access
+A simple demo showcasing Fastly Object Storage and Image Optimizer working together. This repository demonstrates how to dynamically fetch images from Object Storage and display them in a responsive Bootstrap grid using Fastly Compute @ Edge.
 
 ## Prerequisites (pre SKO tasks)
 
