@@ -8,6 +8,7 @@ A simple demo showcasing Fastly Object Storage and Image Optimizer working toget
 - Active Fastly account with Compute services enabled
 - Object Storage access (see setup instructions below)
 - Image Optimizer enabled on a VCL service that we'll use (this also requires a FQDN to be used)
+- Dynamic Backends for compute enabled
 
 ## Quick Start (SKO training instructions)
 
