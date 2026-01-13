@@ -10,11 +10,12 @@ A comprehensive demo showcasing Fastly Object Storage and Image Optimizer workin
 - ⚡ **Edge Computing**: Hosted on Fastly Compute for ultra-fast global delivery
 - 🔐 **Secure Authentication**: AWS Signature V4 authentication for Object Storage access
 
-## Prerequisites
+## Prerequisites (pre SKO tasks)
 
 - [Fastly CLI](https://developer.fastly.com/learning/compute/javascript/) installed
 - Active Fastly account with Compute services enabled
 - Object Storage access (see setup instructions below)
+- Image Optimizer enabled on a VCL service that we'll use (this also requires a FQDN to be used)
 
 ## Quick Start (SKO training instructions)
 
