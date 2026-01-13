@@ -16,7 +16,7 @@ A comprehensive demo showcasing Fastly Object Storage and Image Optimizer workin
 - Active Fastly account with Compute services enabled
 - Object Storage access (see setup instructions below)
 
-## Quick Start
+## Quick Start (SKO training instructions)
 
 ### 1. Set Up Object Storage
 
