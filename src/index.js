@@ -16,7 +16,7 @@ const EMPTY_HASH = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852
 // The Fastly access key string
 const ACCESS_KEY_ID = "key"; 
 // The Fastly secret access key paired with the access key above
-const SECRET_ACCESS_KEY = "secret"; /
+const SECRET_ACCESS_KEY = "secret"; 
 
 const AWS_REGION = "eu-central";
 const OBJECT_STORAGE_ENDPOINT = "https://eu-central.object.fastlystorage.app";
