@@ -10,7 +10,7 @@ A simple demo showcasing Fastly Object Storage and Image Optimizer working toget
 - Image Optimizer enabled on a VCL service that we'll use (this also requires a FQDN to be used)
 - Dynamic Backends for compute enabled
 
-## Quick Start (SKO training instructions)
+## Start (SKO training instructions)
 
 ### 1. Set Up Object Storage
 
