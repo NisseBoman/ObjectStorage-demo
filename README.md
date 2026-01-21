@@ -110,37 +110,6 @@ The demo automatically adds `width` and `height` parameters to image URLs:
 - `us-west.object.fastlystorage.app`
 - `eu-central.object.fastlystorage.app`
 
-## Development
-
-```bash
-# Local development server
-fastly compute serve
-
-# Build for production
-fastly compute build
-
-# Publish to Fastly
-fastly compute publish
-```
-
-## Customization
-
-### Adding New Image Types
-Update the `IMAGE_EXTENSIONS` array in `src/index.js`:
-
-```javascript
-const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.avif', '.svg', '.your-new-format'];
-```
-
-### Adjusting Grid Responsiveness
-Modify the Bootstrap classes in the `generateImageGridHTML` function:
-
-```javascript
-html += `
-  <div class="col-12 col-md-6 col-lg-3 mb-3"> // Change these classes
-    <!-- Your content -->
-  </div>`;
-```
 
 ## Troubleshooting
 
